@@ -40,7 +40,7 @@ jobs:
         run: yarn semantic-release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
       - name: Build Storybook
         run: |
           rm -rf node_modules
