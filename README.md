@@ -3,7 +3,7 @@
   <br>
   <a href="https://github.com/Nimble-Institute/nimble-charts.git"><img src="./logo.webp" alt="Markdownify" width="200"></a>
   <br>
-  Nimble Charts
+  Nimble Charts - New
   <br>
 </h1>
 
