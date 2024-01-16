@@ -1,0 +1,97 @@
+{
+  "name": "@nimble-institute/nimble-charts",
+  "homepage": "https://github.com/Nimble-Institute/nimble-charts.git",
+  "version": "0.0.0-development",
+  "description": "<h1 align=\"center\">",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "commit": "git-cz",
+    "acp": "git add . && npm run commit && git push",
+    "rollup": "rm -rf /dist && rollup -c",
+    "storybook": "storybook dev -p 6006",
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "npm run predeploy && gh-pages -d storybook-static",
+    "build-storybook": "storybook build",
+    "semantic-release": "semantic-release --branches main"
+  },
+  "author": "Manoj Gamachchige",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@rollup/plugin-commonjs": "25.0.3",
+    "@rollup/plugin-image": "^3.0.2",
+    "@rollup/plugin-node-resolve": "15.1.0",
+    "@rollup/plugin-typescript": "11.1.2",
+    "@storybook/addon-actions": "^7.6.4",
+    "@storybook/addon-essentials": "^7.6.4",
+    "@storybook/addon-interactions": "^7.6.4",
+    "@storybook/addon-links": "^7.6.4",
+    "@storybook/react": "^7.6.4",
+    "@storybook/react-webpack5": "^7.6.4",
+    "@storybook/testing-library": "^0.2.2",
+    "@types/c3": "^0.7.8",
+    "@types/node": "^20.4.8",
+    "@types/react": "^18.2.18",
+    "@types/react-dom": "^18.2.7",
+    "@types/styled-components": "^5.1.26",
+    "babel-loader": "^9.1.3",
+    "babel-plugin-react-html-attrs": "^3.0.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "gh-pages": "^5.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "3.27.2",
+    "rollup-plugin-dts": "5.3.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-preserve-directives": "^0.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "semantic-release": "^22.0.10",
+    "storybook": "^7.6.4",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/material": "^5.14.11",
+    "@types/react-calendar-timeline": "^0.28.2",
+    "c3": "^0.7.20",
+    "dayjs": "^1.11.9",
+    "interactjs": "^1.10.18",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "polished": "^4.2.2",
+    "react-calendar-timeline": "^0.28.0",
+    "recharts": "^2.7.2",
+    "styled-components": "^6.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nimble-Institute/nimble-charts.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "resolutions": {
+    "jackspeak": "2.1.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Nimble-Institute/nimble-charts/issues"
+  }
+}
