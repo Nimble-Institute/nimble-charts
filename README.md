@@ -45,5 +45,5 @@ MIT
 
 ---
 
-> GitHub [@manoj201](https://github.com/Manoj201) &nbsp;&middot;&nbsp;
+> GitHub [@manoj201 ](https://github.com/Manoj201) &nbsp;&middot;&nbsp;
 ```
