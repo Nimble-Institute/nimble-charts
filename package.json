@@ -1,6 +1,6 @@
 {
   "name": "@nimble-institute/nimble-charts",
-  "homepage": "https://github.com/Nimble-Institute/nimble-charts.git",
+  "homepage": "http://github.com/Nimble-Institute/nimble-charts.git",
   "version": "0.0.0-development",
   "description": "<h1 align=\"center\">",
   "main": "dist/cjs/index.js",
@@ -81,7 +81,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nimble-Institute/nimble-charts.git"
+    "url": "https://github.com/Nimble-Institute/nimble-charts.git"
   },
   "config": {
     "commitizen": {
@@ -90,8 +90,5 @@
   },
   "resolutions": {
     "jackspeak": "2.1.1"
-  },
-  "bugs": {
-    "url": "https://github.com/Nimble-Institute/nimble-charts/issues"
   }
 }
