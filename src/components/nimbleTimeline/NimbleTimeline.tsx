@@ -160,14 +160,11 @@ export const NimbleTimeline: React.FC<NimbleTimeline> = ({
 
   const handleItemMove = (itemId: number, dragTime: number, newGroupOrder: number) => {
     const item: any = items.filter(item => item.id === itemId);
+    const diff = item[0].end - item[0].start;
+    const startDate = moment(dragTime).startOf('isoWeek');
+    const endDate = startDate.clone().add(diff, 'ms').endOf('isoWeek').format('YYYY-MM-DD');
     setDraggedItem(undefined);
-    itemMoveHandler &&
-      itemMoveHandler(
-        itemId,
-        dragTime,
-        dragTime + (item[0]?.end?.valueOf() - item[0]?.start?.valueOf()),
-        newGroupOrder,
-      );
+    itemMoveHandler && itemMoveHandler(itemId, startDate?.format('YYYY-MM-DD'), endDate, newGroupOrder);
   };
 
   const handleItemResize = (itemId: number, time: number, edge: string) => {
